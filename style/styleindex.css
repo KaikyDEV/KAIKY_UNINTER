@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+html, body {
+    height: 100%; /* Garante que o body ocupe a altura total da janela */
+    margin: 0; /* Remove margens padrão */
+}
+
+body {
+    display: flex; /* Torna o body um contêiner flex */
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+}
+
+.principal {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(24,184,217,1) 37%, rgba(34,187,219,1) 63%, rgba(255,255,255,1) 92%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cabecalho a {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: large;
+    color: #fff;
+    padding: 20px 50px 20px 50px;
+    text-decoration: none;
+}
+
+.cabecalho a:hover{
+    color: #080370;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.corpo_imagem {
+    color: rgb(24, 127, 147);
+    display: flex; /* Coloca os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Mantém os itens alinhados à esquerda */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+    padding: 120px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.corpo_imagem_eu h1{
+    flex: 2; /* Permite que o texto ocupe espaço disponível */
+    align-items: center;
+    justify-content: center;
+}
+
+.corpo_imagem_eu{
+    background-color: fff;
+    border: 5px solid rgb(24, 127, 147);
+    padding-top: 90px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.corpo_imagem_descricao img {
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.corpo_imagem_descricao{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid rgb(24, 127, 147);
+    padding: 10px;
+    background-color: #fff;
+  }
+
+section {
+    flex: 1; /* Faz com que o section ocupe o espaço restante */
+}
+
+/* Estilo do footer */
+footer {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(24,184,217,1) 37%, rgba(34,187,219,1) 63%, rgba(255,255,255,1) 92%);
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+}
